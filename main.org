@@ -1,0 +1,162 @@
+#+TITLE: Professional Resume
+#+AUTHOR: Your Name
+#+OPTIONS: toc:nil num:nil author:nil title:nil
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_HEADER: \usepackage[a4paper,margin=0.7in]{geometry}
+#+LATEX_HEADER: \usepackage{titlesec}
+#+LATEX_HEADER: \usepackage{parskip}
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \usepackage{fontawesome5}
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \usepackage{multicol}
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage{lmodern}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{xcolor}
+#+LATEX_HEADER: \usepackage{tabularx}
+#+LATEX_HEADER: \usepackage{ragged2e}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+
+#+LATEX_HEADER: \definecolor{heading}{RGB}{0, 51, 102}
+#+LATEX_HEADER: \definecolor{accent}{RGB}{70, 130, 180}
+#+LATEX_HEADER: \definecolor{linkcolor}{RGB}{0, 102, 204}
+#+LATEX_HEADER: \definecolor{disclaimer}{RGB}{128, 128, 128}
+
+#+LATEX_HEADER: \titleformat{\section}{\normalfont\bfseries\Large\color{heading}}{}{0em}{}[\titlerule]
+#+LATEX_HEADER: \titlespacing*{\section}{0pt}{10pt}{6pt}
+#+LATEX_HEADER: \titleformat{\subsection}{\normalfont\bfseries\color{accent}}{}{0em}{}
+#+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+#+LATEX_HEADER: \setlist[itemize]{leftmargin=*,nosep,topsep=1pt,parsep=1pt,partopsep=1pt,label={\small\textcolor{accent}{$\blacktriangleright$}}}
+#+LATEX_HEADER: \hypersetup{colorlinks=true,urlcolor=linkcolor,linkcolor=linkcolor,citecolor=linkcolor}
+#+LATEX_HEADER: \setlength{\parindent}{0pt}
+#+LATEX_HEADER: \renewcommand{\baselinestretch}{1.15}
+
+#+LATEX_HEADER: \newcommand{\datedsection}[2]{%
+#+LATEX_HEADER:   \subsection[#1]{#1 \hfill \normalfont\normalsize\textcolor{accent}{#2}}}
+#+LATEX_HEADER: \newcommand{\role}[2]{\textbf{#1} \hfill \textit{#2}\\}
+#+LATEX_HEADER: \newcommand{\tech}[1]{\textcolor{accent}{\small\textbf{#1}}}
+
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \renewcommand{\headrulewidth}{0pt}
+#+LATEX_HEADER: \fancyfoot[C]{\footnotesize\textcolor{disclaimer}{Proudly using \href{https://github.com/KrzysztofMarciniak/resume}{github.com/KrzysztofMarciniak/resume} org-mode template.}}
+
+#+BEGIN_EXPORT latex
+\begin{center}
+  {\Huge\textbf{\textcolor{heading}{YOUR NAME}}}\\[0.2cm]
+  {\small
+    \faEnvelope\ \href{mailto:your.email@example.com}{your.email@example.com} $\cdot$
+    \faGlobe\ \href{https://www.yourwebsite.com}{yourwebsite.com} $\cdot$
+    \faGithub\ \href{https://github.com/profile}{github.com/profile} $\cdot$
+    \faLinkedin\ \href{https://linkedin.com/in/profile}{linkedin.com/in/profile}
+  }
+\end{center}
+#+END_EXPORT
+
+* SKILLS
+#+BEGIN_EXPORT latex
+\begin{multicols}{3}
+\begin{itemize}
+  \item \textbf{Languages:} Python, C++, JavaScript, TypeScript, Go, Rust, SQL
+  \item \textbf{Frameworks:} TensorFlow, PyTorch, React, Vue.js, Django, Flask, FastAPI
+  \item \textbf{Cloud \& DevOps:} AWS, GCP, Azure, Docker, Kubernetes, Terraform, CI/CD
+  \item \textbf{Databases:} PostgreSQL, MongoDB, Redis, Elasticsearch, DynamoDB
+  \item \textbf{Methods:} Machine Learning, Data Engineering, Microservices, Agile, TDD
+  \item \textbf{Soft Skills:} Technical Leadership, Communication, Project Management
+\end{itemize}
+\end{multicols}
+#+END_EXPORT
+
+* EXPERIENCE
+#+BEGIN_EXPORT latex
+\datedsection{COMPANY NAME}{Month Year -- Present}
+\role{Senior Position Title}{Location}
+\begin{itemize}
+  \item Led development of \tech{key project} that increased [metric] by \textbf{X\%}, leveraging \tech{technology stack}
+  \item Architected and implemented \tech{specific system} resulting in \textbf{\$X} cost savings annually
+  \item Mentored team of X engineers, improving sprint velocity by \textbf{X\%} through implementation of \tech{methodology}
+  \item Collaborated with cross-functional teams to deliver \tech{product feature} that generated \textbf{X} new customers
+\end{itemize}
+
+\datedsection{PREVIOUS COMPANY}{Month Year -- Month Year}
+\role{Position Title}{Location}
+\begin{itemize}
+  \item Developed \tech{specific solution} that reduced processing time by \textbf{X\%} using \tech{technologies}
+  \item Optimized \tech{system component} improving performance by \textbf{X\%} and reducing infrastructure costs
+  \item Implemented \tech{automation framework} that decreased deployment time from X hours to \textbf{Y minutes}
+  \item Spearheaded migration from \tech{legacy system} to \tech{modern platform}, resulting in \textbf{X\%} improved reliability
+\end{itemize}
+
+\datedsection{EARLY CAREER COMPANY}{Month Year -- Month Year}
+\role{Junior Position Title}{Location}
+\begin{itemize}
+  \item Contributed to development of \tech{product feature} that increased user engagement by \textbf{X\%}
+  \item Designed and implemented \tech{database schema} supporting X million daily transactions
+  \item Created comprehensive test suite using \tech{testing framework} achieving \textbf{X\%} code coverage
+\end{itemize}
+#+END_EXPORT
+
+* EDUCATION
+#+BEGIN_EXPORT latex
+\datedsection{UNIVERSITY NAME}{Year -- Year}
+\role{Degree, Major}{Location}
+\begin{itemize}
+  \item Thesis: "\textit{Your Thesis Title}" - Advisor: Dr. Name
+  \item GPA: X.X/4.0 (Top X\% of class)
+  \item Relevant coursework: Advanced Course 1, Course 2, Course 3
+  \item Activities: Student Organization, Hackathon, Research Group
+\end{itemize}
+
+\datedsection{PREVIOUS UNIVERSITY}{Year -- Year}
+\role{Degree, Major}{Location}
+\begin{itemize}
+  \item Graduated with honors (if applicable)
+  \item Relevant coursework: Course 1, Course 2, Course 3
+\end{itemize}
+#+END_EXPORT
+
+* PROJECTS
+#+BEGIN_EXPORT latex
+\datedsection{SIGNIFICANT PROJECT NAME}{Year}
+\begin{itemize}
+  \item Developed \tech{specific solution} addressing [problem] using \tech{technologies}
+  \item Implemented \tech{key algorithm/feature} resulting in \textbf{X\%} improvement in [metric]
+  \item Open-source project with X+ stars on GitHub and Y+ active contributors
+  \item \textbf{Technologies:} \tech{Tech1}, \tech{Tech2}, \tech{Tech3}
+\end{itemize}
+
+\datedsection{ANOTHER PROJECT NAME}{Year}
+\begin{itemize}
+  \item Created \tech{application/system} that [specific function/purpose]
+  \item Designed \tech{architecture} supporting X concurrent users with Y response time
+  \item Featured in [publication/conference] for innovative approach to [problem domain]
+  \item \textbf{Technologies:} \tech{Tech1}, \tech{Tech2}, \tech{Tech3}
+\end{itemize}
+#+END_EXPORT
+
+* AWARDS & PUBLICATIONS
+#+BEGIN_EXPORT latex
+\datedsection{AWARD/PUBLICATION TITLE}{Year}
+\begin{itemize}
+  \item Recognized for [specific achievement] by [organization]
+  \item Selected from X applicants/nominees for [specific criteria]
+\end{itemize}
+
+\datedsection{RESEARCH PAPER/PUBLICATION}{Year}
+\begin{itemize}
+  \item Published in [Journal/Conference] with impact factor of X
+  \item Cited by X+ subsequent papers in the field
+  \item Presented findings at [Conference Name]
+\end{itemize}
+#+END_EXPORT
+
+* CERTIFICATIONS & ADDITIONAL TRAINING
+#+BEGIN_EXPORT latex
+\begin{itemize}
+  \item \textbf{Professional Certification Name} (Issuing Organization, Year)
+  \item \textbf{Advanced Training Program} (Provider, Year)
+  \item \textbf{Specialized Workshop/Bootcamp} (Organizer, Year)
+\end{itemize}
+#+END_EXPORT
